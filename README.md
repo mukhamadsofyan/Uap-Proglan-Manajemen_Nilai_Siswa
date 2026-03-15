@@ -1,58 +1,284 @@
-# Manajemen Nilai Siswa
+# 📚 Student Grade Management System
 
-Proyek **Manajemen Nilai Siswa** adalah aplikasi berbasis *Graphical User Interface* (GUI) yang dibangun menggunakan bahasa pemrograman Java dengan pustaka *Swing*. Aplikasi ini bertujuan untuk membantu pengelolaan data siswa dan nilai mereka, dengan fitur utama seperti menambah, mengedit, menghapus data siswa, serta memasukkan dan mengedit nilai siswa. Aplikasi ini juga memungkinkan pengguna untuk melihat data siswa secara lengkap dalam bentuk tabel.
+**Student Grade Management System** adalah aplikasi desktop berbasis **Java Swing GUI** yang digunakan untuk mengelola data siswa dan nilai akademik secara sederhana dan terstruktur.
 
-## Fitur
-- **Tambah Siswa**: Menambahkan data siswa baru termasuk nama, NIS, kelas, dan foto siswa.
-- **Edit Siswa**: Mengubah data siswa yang sudah ada berdasarkan ID siswa.
-- **Hapus Siswa**: Menghapus siswa dari daftar berdasarkan ID siswa.
-- **Input Nilai**: Memasukkan nilai untuk siswa yang sudah ada dalam tiga mata pelajaran.
-- **Edit Nilai**: Mengubah nilai yang telah dimasukkan untuk siswa.
-- **Lihat Nilai**: Menampilkan data siswa lengkap dengan nilai-nilai yang telah dimasukkan dalam bentuk tabel.
+Aplikasi ini memungkinkan pengguna untuk **menambah, mengedit, menghapus data siswa**, serta **menginput dan mengubah nilai mata pelajaran** melalui antarmuka grafis yang mudah digunakan.
 
-## Persyaratan Sistem
-Untuk menjalankan aplikasi ini, Anda memerlukan:
-- **Java Development Kit (JDK) 8** atau versi yang lebih tinggi.
-- **IDE**: Disarankan menggunakan IntelliJ IDEA, Eclipse, atau NetBeans.
-- **Sistem Operasi**: Aplikasi ini dapat dijalankan di Windows, macOS, atau Linux yang memiliki Java terinstal.
+Project ini dikembangkan sebagai bagian dari **tugas akademik sekaligus portfolio pengembangan aplikasi desktop menggunakan Java dan konsep Object-Oriented Programming (OOP).**
 
-## Penjelasan Struktur Kode
-### 1. ManajemenGui.java :
-- Kelas utama yang bertanggung jawab untuk menampilkan antarmuka pengguna (GUI).
-   Menggunakan komponen GUI seperti JPanel, JButton, dan JTable untuk membangun tampilan aplikasi.
-   Memiliki berbagai form untuk input data seperti penambahan, pengeditan, dan penghapusan data siswa serta input nilai.
-### 2. Manajemen.java
-   - Kelas yang bertugas untuk mengelola data siswa dan nilai mereka.
-   Menyimpan data siswa dalam daftar (list) dan mengelola operasi seperti menambah, mengedit, menghapus siswa, serta memasukkan dan mengubah nilai siswa.
-### 3. Siswa.java
-  - Kelas yang menyimpan data individual siswa, seperti ID, nama, NIS, kelas, foto, dan nilai-nilai mereka.
-   Menyediakan metode getter dan setter untuk mengakses dan mengubah data siswa.
-### 4. Main.java
-  - Titik masuk utama untuk menjalankan aplikasi.
-   Memulai kelas ManajemenGui yang akan menampilkan antarmuka pengguna.
-   Penggunaan
-   Setelah aplikasi berjalan, Anda dapat menggunakan fitur-fitur berikut:
+---
 
-### 1. Tambah Siswa
- -  Pilih menu Tambah Siswa di sidebar.
-   Masukkan informasi siswa, termasuk nama, NIS, kelas, dan foto siswa.
-   Klik tombol Tambah Siswa untuk menyimpan data siswa.
-### 2. Edit Siswa
-  - Pilih menu Edit Siswa di sidebar.
-   Pilih siswa yang akan diedit dari dropdown list berdasarkan ID siswa.
-   Masukkan data baru untuk siswa tersebut dan klik Edit Siswa untuk menyimpan perubahan.
-### 3. Hapus Siswa
- -  Pilih menu Hapus Siswa di sidebar.
-   Pilih siswa yang akan dihapus dari daftar berdasarkan ID siswa.
-   Klik Hapus Siswa untuk menghapus data siswa tersebut.
-### 4. Input Nilai
- -  Pilih menu Input Nilai di sidebar.
-   Pilih siswa yang nilai-nilainya akan diinputkan.
-   Masukkan nilai untuk tiga mata pelajaran dan klik Input Nilai untuk menyimpan nilai.
-### 5. Edit Nilai
- -  Pilih menu Edit Nilai di sidebar.
-   Pilih siswa yang nilai-nilainya akan diedit.
-   Masukkan nilai baru untuk mata pelajaran yang ingin diubah dan klik Edit Nilai untuk menyimpan perubahan.
-### 6. Lihat Nilai
- -  Pilih menu Lihat Nilai di sidebar.
-   Tabel akan menampilkan daftar semua siswa beserta nilai mereka dalam tiga mata pelajaran. Anda bisa menggulir tabel untuk melihat data secara lebih lengkap.
+# 📌 Project Overview
+
+Aplikasi ini dirancang untuk membantu proses pengelolaan data siswa di lingkungan pendidikan dengan menyediakan fitur manajemen data yang terintegrasi dalam satu sistem.
+
+Fitur utama aplikasi meliputi:
+
+* Manajemen data siswa
+* Input nilai mata pelajaran
+* Edit dan update nilai siswa
+* Tampilan data siswa dalam tabel
+* Antarmuka GUI yang interaktif
+
+Project ini mengimplementasikan konsep **CRUD (Create, Read, Update, Delete)** menggunakan pendekatan **Object-Oriented Programming (OOP)**.
+
+---
+
+# 🚀 Features
+
+## 👨‍🎓 Student Management
+
+Pengguna dapat mengelola data siswa dengan fitur:
+
+* Menambahkan data siswa baru
+* Mengedit data siswa
+* Menghapus data siswa
+* Menyimpan informasi siswa seperti:
+
+  * Nama
+  * NIS (Nomor Induk Siswa)
+  * Kelas
+  * Foto siswa
+
+---
+
+## 📊 Grade Management
+
+Sistem memungkinkan pengelolaan nilai siswa untuk beberapa mata pelajaran dengan fitur:
+
+* Input nilai siswa
+* Edit nilai siswa
+* Menyimpan nilai berdasarkan siswa
+* Menampilkan nilai dalam tabel
+
+---
+
+## 📋 Data Visualization
+
+Semua data siswa dan nilai ditampilkan dalam bentuk **tabel GUI (JTable)** sehingga memudahkan pengguna dalam membaca dan mengelola data.
+
+---
+
+# 🧰 Tech Stack
+
+| Technology | Description                 |
+| ---------- | --------------------------- |
+| Java       | Programming Language        |
+| Java Swing | GUI Framework               |
+| OOP        | Object-Oriented Programming |
+| JTable     | Data Table Visualization    |
+
+---
+
+# 📁 Project Structure
+
+```id="o36vrb"
+Student-Grade-Management/
+│
+├── ManajemenGui.java
+├── Manajemen.java
+├── Siswa.java
+├── Main.java
+└── README.md
+```
+
+---
+
+# ⚙️ System Requirements
+
+Untuk menjalankan aplikasi ini diperlukan:
+
+* **Java Development Kit (JDK) 8** atau lebih baru
+* IDE Java seperti:
+
+  * IntelliJ IDEA
+  * Eclipse
+  * NetBeans
+
+### Supported Operating Systems
+
+* Windows
+* macOS
+* Linux
+
+---
+
+# 🧩 Code Architecture
+
+## ManajemenGui.java
+
+Kelas ini bertanggung jawab untuk membangun **antarmuka pengguna (GUI)** menggunakan Java Swing.
+
+Fungsi utama:
+
+* Menampilkan form input siswa
+* Menampilkan tabel data siswa
+* Menyediakan tombol operasi CRUD
+* Mengelola interaksi pengguna
+
+Komponen GUI yang digunakan antara lain:
+
+* `JPanel`
+* `JButton`
+* `JTable`
+* `JTextField`
+* `JComboBox`
+
+---
+
+## Manajemen.java
+
+Kelas ini berfungsi sebagai **logic layer** yang mengelola seluruh data siswa dan nilai.
+
+Fungsi utama:
+
+* Menyimpan daftar siswa
+* Menambah siswa
+* Mengedit siswa
+* Menghapus siswa
+* Mengelola nilai siswa
+
+Data disimpan menggunakan struktur **List / ArrayList**.
+
+---
+
+## Siswa.java
+
+Kelas ini merepresentasikan **model data siswa**.
+
+Data yang disimpan meliputi:
+
+* ID siswa
+* Nama
+* NIS
+* Kelas
+* Foto
+* Nilai mata pelajaran
+
+Kelas ini menyediakan **getter dan setter methods** untuk mengakses dan memperbarui data.
+
+---
+
+## Main.java
+
+Merupakan **entry point aplikasi**.
+
+Fungsi utama:
+
+* Menjalankan program
+* Memanggil kelas `ManajemenGui`
+* Menampilkan GUI aplikasi
+
+---
+
+# ▶️ How to Run
+
+## 1 Clone Repository
+
+```id="1opj2j"
+git clone https://github.com/username/student-grade-management.git
+```
+
+## 2 Open Project in IDE
+
+Buka project menggunakan IDE Java seperti:
+
+* IntelliJ IDEA
+* Eclipse
+* NetBeans
+
+## 3 Run Application
+
+Jalankan file berikut:
+
+```id="s90j74"
+Main.java
+```
+
+Aplikasi GUI akan terbuka dan siap digunakan.
+
+---
+
+# 🧠 Application Workflow
+
+Setelah aplikasi berjalan, pengguna dapat melakukan beberapa operasi berikut:
+
+### Tambah Siswa
+
+1. Pilih menu **Tambah Siswa**
+2. Masukkan data siswa
+3. Klik **Tambah Siswa**
+
+### Edit Siswa
+
+1. Pilih menu **Edit Siswa**
+2. Pilih siswa berdasarkan ID
+3. Ubah data
+4. Klik **Edit Siswa**
+
+### Hapus Siswa
+
+1. Pilih menu **Hapus Siswa**
+2. Pilih siswa dari daftar
+3. Klik **Hapus Siswa**
+
+### Input Nilai
+
+1. Pilih menu **Input Nilai**
+2. Pilih siswa
+3. Masukkan nilai mata pelajaran
+4. Klik **Simpan**
+
+### Edit Nilai
+
+1. Pilih menu **Edit Nilai**
+2. Pilih siswa
+3. Perbarui nilai
+4. Klik **Edit Nilai**
+
+### Lihat Nilai
+
+1. Pilih menu **Lihat Nilai**
+2. Sistem akan menampilkan tabel nilai siswa
+
+---
+
+# 🎯 Project Purpose
+
+Project ini dibuat sebagai:
+
+* Implementasi **Java Swing Desktop Application**
+* Latihan konsep **Object-Oriented Programming (OOP)**
+* Implementasi **CRUD Data Management**
+* Portfolio project dalam pengembangan aplikasi desktop
+
+---
+
+# 👨‍💻 Author
+
+**Mukhamad Sofyan**
+GitHub: https://github.com/mukhamadsofyan
+
+---
+
+# 🤝 Contributors
+
+Project ini dikembangkan oleh:
+
+* **Mukhamad Sofyan**
+* **Moh. Ravlindo Saputra**
+
+---
+
+# 📊 Languages Used
+
+* HTML — 76.0%
+* Java — 10.0%
+* JavaScript — 7.7%
+* CSS — 6.3%
+
+---
+
+# 📄 License
+
+Project ini dibuat untuk **tujuan pembelajaran dan portfolio akademik**.
